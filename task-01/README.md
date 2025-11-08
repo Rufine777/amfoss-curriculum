@@ -7,7 +7,9 @@ I initially didn’t know how to start this task, but I was very excited to expl
 
 ## Resources I Used
 - [Git Official Documentation](https://git-scm.com/doc)
-- []
+
+## Congratulation Message:
+![Git Exercise Done](GitExerciseDONE.png)
 
 ---
 

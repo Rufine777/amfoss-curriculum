@@ -9,7 +9,7 @@ I initially didn’t know how to start this task, but I was very excited to expl
 - [Git Official Documentation](https://git-scm.com/doc)
 
 ## Congratulation Message:
-![Git Exercise Done](GitExerciseDONE.png)
+![Git Exercise Done](.Congratulation.png)
 
 ---
 

@@ -5,7 +5,7 @@ This repository documents my progress through the **amFOSS Curriculum (Recruits 
 
 Feel free to explore my work:
 
-- **Blog:** [ajultm48-aeflc.wordpress.com](https://ajultm48-aeflc.wordpress.com/wp-admin/post.php?post=6&action=edit)  
+- **Blog:** [ajultm48-aeflc.wordpress.com](https://ajultm48-aeflc.wordpress.com/2025/11/08/hello-everyone/)  
 - **LinkedIn:** [Ajul Tm](https://www.linkedin.com/in/ajultm/)  
 - **Email:** ajultm48@gmail.com  
 - **Portfolio:** [rufine777.github.io](https://rufine777.github.io)

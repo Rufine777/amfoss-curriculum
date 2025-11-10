@@ -13,3 +13,4 @@ Feel free to explore my work:
 | Tasks | Status |
 |-------|--------|
 | Task-01: Git exercises | ✅ |
+| Task-02: SRS Document for MeloFi | ✅ |

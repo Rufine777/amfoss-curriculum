@@ -14,3 +14,7 @@ Feel free to explore my work:
 |-------|--------|
 | Task-01: Git exercises | ✅ |
 | Task-02: SRS Document for MeloFi | ✅ |
+| Task-03: Wireframe for MeloFi | ✅ |
+| Task-04: Figma Design for MeloFi | ✅ |
+| Task-05: Frontend for MeloFi | ✅ |
+| Task-06: Backend for MeloFi | ... |

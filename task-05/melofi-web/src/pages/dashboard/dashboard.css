@@ -1,0 +1,119 @@
+.dashboard-wrapper {
+    display: flex;
+    position: relative;
+    background-color: #0b0b0b;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.dashboard-background {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+
+.dashboard-background::before {
+    content: "MeloFi";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25vw;
+    font-weight: 800;
+    font-family: 'Segoe UI', sans-serif;
+    color: rgba(255, 77, 77, 0.03);
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 77, 77, 0.2);
+    background: linear-gradient(to bottom, #4e1018 0%, #0b0b0b 100%);
+}
+
+.dashboard-logo {
+    font-size: 3.5rem;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.dashboard-search-bar {
+    width: 400px;
+    padding: 10px 15px;
+    border: 1px solid rgba(255, 77, 77, 0.2);
+    background: rgba(119, 29, 29, 0.534);
+    color: #ffffff;
+    border-radius: 4px;
+    outline: none;
+}
+
+.dashboard-section {
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(255, 77, 77, 0.1);
+    padding-bottom: 20px;
+}
+
+.playlist-gradient {
+    background: linear-gradient(to bottom, #8b5c62 0%, #7a7272 100%);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+
+.row-scroll {
+    display: flex;
+    gap: 20px;
+    padding: 10px 40px;
+}
+
+
+
+
+
+
+.side-trigger {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(78, 16, 24, 0.8);
+    border: 1px solid #ff4d4d;
+    color: white;
+    font-size: 2.5rem;
+    cursor: pointer;
+    z-index: 2000;
+    width: 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-trigger.open { right: 0; border-radius: 20px 0 0 20px; }
+
+
+.settings-icon{
+    font-size: 1.7rem;
+    color: #ffffff;
+    cursor: pointer;
+}
+.profile-icon{
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background-color:#221d1d;
+    cursor:pointer;
+    border:2px solid #ff4d4d;
+}

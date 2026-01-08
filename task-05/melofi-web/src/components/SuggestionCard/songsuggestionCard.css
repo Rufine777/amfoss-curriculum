@@ -1,0 +1,66 @@
+/* src/components/SuggestionCard/songsuggestionCard.css */
+
+.songsuggestion-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px 20px;
+    border-radius: 12px;
+    gap: 15px;
+    width: 100%;
+    box-sizing: border-box; 
+}
+
+.songsuggestion-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+
+}
+
+.songsuggestion-cover {
+    width: 60px;
+    height: 60px;
+    min-width: 60px; 
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.songsuggestion-info {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.songsuggestion-title {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.songsuggestion-artist {
+    margin: 4px 0 0 0;
+    font-size: 0.9rem;
+    color: #b3b3b3;
+}
+
+.songsuggestion-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.action-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+    padding: 5px;
+}
+
+.action-btn:hover {
+    opacity: 1;
+    color: #ff4d4d;
+}

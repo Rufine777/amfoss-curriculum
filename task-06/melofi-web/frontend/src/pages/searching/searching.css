@@ -1,0 +1,85 @@
+
+.searching-page {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b0b;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.searching-page::before {
+    content: "MeloFi";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25vw;
+    font-weight: 800;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: rgba(255, 77, 77, 0.03);
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.searching-top {
+    border-bottom: 1px solid rgba(255, 77, 77, 0.2); 
+    background: linear-gradient(to bottom, #4e1018 0%, #0b0b0b 100%);
+}
+
+.searching-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px; 
+    margin-left: 35px;
+}
+
+.logo {
+    font-size: 3.5rem;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    background: rgba(99, 30, 30, 0.582);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+}
+
+.searching-content {
+    padding: 40px 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.history-title { 
+    max-width: 1400px;
+    width: 100%;
+    margin-left: 20px;
+    font-size: 1.4rem;
+    color: white;
+}
+
+.search-suggestions-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    max-width: 1400px; 
+    gap: 12px;
+}

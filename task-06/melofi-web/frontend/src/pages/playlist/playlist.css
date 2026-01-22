@@ -1,0 +1,103 @@
+.playlist-background {
+    background-color: #0b0b0b;
+    min-height: 100vh;
+    position: relative;
+    z-index: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.playlist-background::before {
+    content: "MeloFi";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25vw;
+    font-weight: 800; 
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: rgba(255, 77, 77, 0.03);
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.playlist-top-section {
+    display: flex;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 100px 40px 40px 40px;
+    background: linear-gradient(to bottom, #4e1018 0%, #0b0b0b 100%);
+    border-bottom: 1px solid rgba(255, 77, 77, 0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.playlist-info-text {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+}
+
+.playlist-name-title {
+    font-size: 70px; 
+    font-weight: 800;
+    margin: 0;
+    color: #ff3c3c;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.number-of-songs {
+    font-size: 16px;
+    color: #b3b3b3;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.songs-list-section {
+    padding: 20px 0 100px 0;
+    width: 100%;
+}
+
+/* .song-header, */
+.songs-list-section p {
+    display: grid;
+    grid-template-columns: 50px 3fr 2fr 80px; 
+    gap: 20px;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 0 40px; 
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* .song-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    color: #888;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+} */
+
+.songs-list-section p {
+    color: #b3b3b3;
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.songs-list-section p:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+.songs-list-section p span:nth-child(2) {
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.songs-list-section p:hover span:nth-child(1) {
+    color: #ff4d4d;
+}
+

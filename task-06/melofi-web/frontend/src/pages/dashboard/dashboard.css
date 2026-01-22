@@ -1,0 +1,214 @@
+.dashboard-wrapper {
+    display: flex;
+    position: relative;
+    background-color: #0b0b0b;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.dashboard-background {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    transition: margin-right 0.3s ease;
+}
+
+.dashboard-background.shrink {
+    margin-right: 400px;
+}
+
+.dashboard-background::before {
+    content: "MeloFi";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25vw;
+    font-weight: 800;
+    font-family: 'Segoe UI', sans-serif;
+    color: rgba(255, 77, 77, 0.03);
+    pointer-events: none;
+    user-select: none;
+    z-index: -1;
+    white-space: nowrap;
+}
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 20px 40px;
+    border-bottom: 1px solid rgba(255, 77, 77, 0.2);
+    background: linear-gradient(to bottom, #4e1018 0%, #0b0b0b 100%);
+}
+
+.dashboard-logo {
+    font-size: 3.5rem;
+    color: #ff4d4d;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.dashboard-search-bar {
+    flex: 1;
+    max-width: 500px;
+    padding: 12px 20px;
+    border: 1px solid rgba(255, 77, 77, 0.2);
+    background: rgba(119, 29, 29, 0.534);
+    color: #ffffff;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.dashboard-search-bar:focus {
+    border-color: #ff4d4d;
+    background: rgba(119, 29, 29, 0.7);
+}
+
+.dashboard-search-bar::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.dashboard-section {
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(255, 77, 77, 0.1);
+    padding-bottom: 30px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: #ff4d4d;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.row-scroll {
+    display: flex;
+    gap: 20px;
+    padding: 10px 40px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 77, 77, 0.5) rgba(255, 77, 77, 0.1);
+}
+
+/* Prevent cards from shrinking */
+.row-scroll > * {
+    flex-shrink: 0;
+    color: #c41e3a;
+}
+
+.row-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.row-scroll::-webkit-scrollbar-track {
+    background: rgba(255, 77, 77, 0.1);
+    border-radius: 10px;
+}
+
+.row-scroll::-webkit-scrollbar-thumb {
+    background: rgba(255, 77, 77, 0.5);
+    border-radius: 10px;
+}
+
+.row-scroll::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 77, 77, 0.7);
+}
+
+.empty-message {
+    color: #aaa;
+    font-size: 1rem;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.miniplayer-side-panel {
+    position: fixed;
+    right: -400px;
+    top: 0;
+    width: 400px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #1a0a0e 0%, #0b0b0b 100%);
+    border-left: 1px solid rgba(255, 77, 77, 0.3);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.miniplayer-side-panel.active {
+    right: 0;
+}
+
+.side-trigger {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(78, 16, 24, 0.9);
+    border: 1px solid #ff4d4d;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 2000;
+    width: 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.side-trigger:hover {
+    background: rgba(78, 16, 24, 1);
+    width: 45px;
+}
+
+.side-trigger.open { 
+    right: 0; 
+    border-radius: 20px 0 0 20px; 
+}
+
+.side-trigger.close {
+    right: 400px;
+    border-radius: 0 20px 20px 0;
+}
+
+.settings-icon {
+    font-size: 1.7rem;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.settings-icon:hover {
+    color: #ff4d4d;
+    transform: rotate(90deg);
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #ff4d4d, #c41e3a);
+    cursor: pointer;
+    border: 2px solid #ff4d4d;
+    transition: all 0.3s ease;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 77, 77, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar {
+        gap: 15px;
+        padding: 15px 20px;
+    }
+}
